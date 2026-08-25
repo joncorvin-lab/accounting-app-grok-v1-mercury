@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f3efe7;
+  --color-surface: #faf8f3;
+  --color-surface-2: #ebe6dc;
+  --color-fg: #1c1917;
+  --color-muted: #6f6a63;
+  --color-subtle: #9a948a;
+  --color-primary: #24302c;
+  --color-primary-fg: #f3efe7;
+  --color-border: #ddd6c8;
+  --color-border-strong: #c9c0b0;
+  --color-income: #3d5c4a;
+  --color-expense: #8b3a32;
+  --color-bar: #c4b8a4;
+  --color-ring: #24302c;
+  --color-background: #f3efe7;
+  --color-foreground: #1c1917;
+  --color-card: #faf8f3;
+  --color-card-foreground: #1c1917;
+  --color-popover: #faf8f3;
+  --color-popover-foreground: #1c1917;
+  --color-muted-foreground: #6f6a63;
+  --color-accent: #ebe6dc;
+  --color-accent-foreground: #1c1917;
+  --color-destructive: #8b3a32;
+  --color-input: #ddd6c8;
+  --color-secondary: #ebe6dc;
+  --color-secondary-foreground: #1c1917;
+
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius: 10px;
+
+  --shadow-soft: 0 1px 0 rgb(28 25 23 / 0.04), 0 12px 32px -16px rgb(28 25 23 / 0.18);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-fg) 16%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

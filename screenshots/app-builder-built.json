@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Tally",
+      "hasCanvas": false,
+      "bodyTextLen": 1333,
+      "bodyTextHash": "89c112b333624ea03143549699987ef50a596a48b274d2920a91b290a717011a",
+      "bodyTextPrefix": "Tally Mercury spending, kept on this device. Overview Activity M",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Tally",
+      "hasCanvas": false,
+      "bodyTextLen": 1332,
+      "bodyTextHash": "40e3d2a9152ea63bbbeb7d4e1b6fb7a6f2836f8257d5c4b49bf0968dd85f0632",
+      "bodyTextPrefix": "Tally Import Sample Mercury workspace. Import your CSV to replac",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
